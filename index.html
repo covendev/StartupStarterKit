@@ -47,12 +47,31 @@
             flex-direction: column;
             align-items: center;
         }
+
+        /* Media Queries */
+        @media (max-width: 1200px) {
+            .section {
+                width: calc(33.33% - 40px); /* Three sections per row */
+            }
+        }
+
+        @media (max-width: 800px) {
+            .section {
+                width: calc(50% - 40px); /* Two sections per row */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .section {
+                width: calc(100% - 40px); /* One section per row */
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-
-        
         <div class="section">
             <h1>Crypto Accelerators / Incubators / Grants</h1>
             <ul>
@@ -80,7 +99,6 @@
                 <li><a href="https://antikythera.org/studios">Antikythera Studio</a></li>
                 <li><a href="http://aspentechpolicyhub.org/nonprofit-and-public-interest-fellowship/">Aspen Tech Policy Hub</a></li>
                 <li><a href="https://ideocolab.com/residency">IDEO Colab Creative Residency</a></li>
-                
                 <li><a href="https://docs.google.com/spreadsheets/d/1JTNfDeRXZKR5hEF3WYIBpi2Wu8QAeghFwJvJ53DrJWo/edit?gid=0#gid=0">View more</a> grants and deep dive on the above mentioned ones in <a href="https://x.com/DStrachman">Danielle Strachman's</a> amazing list</a></li>
             </ul>
         </div>
@@ -103,6 +121,7 @@
                 <li><a href="https://www.beondeck.com/">On Deck Fellowship</a></li> 
             </ul>
         </div>
+
         <div class="section">
             <h1>Launch products</h1>
             <ul>
